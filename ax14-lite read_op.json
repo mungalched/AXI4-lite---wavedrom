@@ -1,0 +1,23 @@
+{signal: [
+  {name: 'S_AXI_ACLK', wave: 'p................'},
+  {name: 'S_AXI_ARESETN' , wave: '0.1..............' },
+  {name: 'S_AXI_ARADDR' , wave: '=.....=...=.....1' , data:["0000000","70000004",'0000']},
+  {name: 'S_AXI_ARVALID' ,wave: '0.....1...0.....1'},
+  {name: 'S_AXI_ARREADY',wave: '0........10.....1'},
+   {name: 'S_AXI_RREADY',wave: '0.....1....0....1'},
+  
+  {name: 'S_AXI_RDATA', wave: '=.........=.....1', data: ['0000000','70000004']},
+   {name: 'S_AXI_RVALID', wave: '0.........10....1'},
+  {name: 'S_AXI_RRESP', wave: '=...............1',data:['0000000']},
+   {name: 'Bus2IP_Clk', wave: 'p................'},
+   {name: 'Bus2IP_Resetn', wave: '0.1..............'},
+  {name: 'Bus2IP_Addr', wave: '=......=..=.....1' , data:['0000000','70000004','0000']},
+   {name: 'Bus2IP_RdCE', wave: '=......=..=.....1' , data:['00000000','40000000','00000000']},
+   {name: 'IP2Bus_Data', wave: '=.......=.=.....1' , data:['00000000','70000004','0000']},
+    {name: 'IP2Bus_RdAck', wave: '0........10.....1'},
+],
+  foot:{
+   text:'Figure 3.AXI4-Lite Read Transaction',
+ },
+ config: {hscale: 1 }
+}

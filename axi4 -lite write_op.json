@@ -1,0 +1,26 @@
+{signal: [
+  {name: 'S_AXI_ACLK'   ,wave: 'p................'},
+  {name: 'S_AXI_ARESETN',wave: '0.1..............' },
+  {name: 'S_AXI_AWADDR' ,wave: '=.....=...=.....1' , data:["0000000","70000004",'0000']},
+  {name: 'S_AXI_AWVALID',wave: '0.....1...0.....1'},
+  {name: 'S_AXI_AWREADY',wave: '0........10.....1'},
+  {name: 'S_AXI_WDATA'  ,wave: '=.....=...=.....1', data: ['0000000','70000004','0000']},
+  {name: 'S_AXI_WVALID' ,wave: '0.....1...0.....1'},
+  {name: 'S_AXI_WSTRB'  ,wave: '=.....=...=.....1', data: ['0000000','FF','00000000']}, 
+  {name: 'S_AXI_WREADY' ,wave: '0.........10....1'},
+  {name: 'S_AXI_BRESP'  ,wave: '=...............1',data:['0000000']},
+  {name: 'S_AXI_BVALID' ,wave: '0..........10...1'},
+  {name: 'S_AXI_BREADY' ,wave: '0.....1.....0...1'},
+  {name: 'Bus2IP_Clk'   ,wave: 'p................'},
+  {name: 'Bus2IP_Resetn',wave: '0.1..............'},
+  {name: 'Bus2IP_Addr'  ,wave: '=......=..=.....1' , data:['0000000','70000004','0000']},
+  {name: 'Bus2IP_Data'  ,wave: '=......=..=.....1' , data:['00000000','70000004','0000']},
+  {name: 'Bus2IP_BE'    ,wave: '=......=..=.....1' , data:['00000000','FF','0000000']},
+  {name: 'Bus2IP_WrCE'  ,wave: '=......=..=.....1' , data:['00000000','40000000','0000000']},
+  {name: 'Bus2IP_WrAck' ,wave: '0........10.....1'},
+],
+  foot:{
+   text:'Figure 3.AXI4-Lite Write Transaction',
+ },
+ config: {hscale: 1 }
+}
